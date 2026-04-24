@@ -1,0 +1,5 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="NavBar Button Icon">
+<path id="Icon" d="M2 20V18H4V9H2V7L12 0L22 7V9H20V18H22V20H2V20M6 18V18H12H18V18H6V18M8 16H10V12L12 15L14 12V16H16V9H14L12 12L10 9H8V16V16M18 18V6.65L12 2.45L6 6.65V18H18V18" fill="var(--fill-0, #5E5F5D)"/>
+</g>
+</svg>

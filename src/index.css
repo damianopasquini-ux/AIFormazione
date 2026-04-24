@@ -1,1 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap");
 @import "tailwindcss";
+
+/* ==========================================================================
+   Design tokens — sourced from Figma file OiikMLxrWLBEdNAV40L6Oi
+   (The Tactile Gallery design system). Every token traces to a Figma variable.
+   ========================================================================== */
+
+@theme {
+  /* Colors — Background */
+  --color-bg-default: #ffffff;
+  --color-bg-default-secondary: #f1f1ee;
+  --color-bg-default-tertiary: #c7c6c4;
+  --color-bg-brand: #6f5a4c;
+  --color-bg-brand-secondary: #c0a796;
+  --color-bg-brand-tertiary: #dec2b1;
+  --color-bg-neutral: #464745;
+  --color-bg-neutral-tertiary: #e3e2e0;
+
+  /* Colors — Text */
+  --color-text-default: #30312f;
+  --color-text-default-secondary: #5e5f5d;
+  --color-text-default-tertiary: #777775;
+  --color-text-brand: #564336;
+  --color-text-brand-secondary: #887364;
+  --color-text-brand-on-brand: #fceee5;
+  --color-text-neutral: #30312f;
+  --color-text-neutral-secondary: #5e5f5d;
+  --color-text-neutral-on-tertiary: #ababa9;
+
+  /* Colors — Icon */
+  --color-icon-brand: #564336;
+  --color-icon-brand-on-brand: #fceee5;
+  --color-icon-default: #30312f;
+  --color-icon-default-secondary: #91918e;
+  --color-icon-neutral: #30312f;
+  --color-icon-neutral-secondary: #5e5f5d;
+  --color-icon-positive: #604129;
+
+  /* Colors — Border */
+  --color-border-default: #e3e2e0;
+  --color-border-neutral-tertiary: #c7c6c4;
+
+  /* Typography — families */
+  --font-heading: "Noto Serif", "Times New Roman", serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+
+  /* Typography — sizes */
+  --text-body-xs: 10px;
+  --text-body-xs--line-height: 1.4;
+  --text-body-sm: 12px;
+  --text-body-sm--line-height: 1;
+  --text-body-md: 14px;
+  --text-body-md--line-height: 1.4;
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 1.5;
+  --text-heading-sm: 20px;
+  --text-heading-sm--line-height: 1.2;
+  --text-heading-md: 24px;
+  --text-heading-md--line-height: 1.2;
+  --text-heading-lg: 32px;
+  --text-heading-lg--line-height: 1.2;
+
+  /* Spacing — sds size space scale */
+  --spacing-100: 4px;
+  --spacing-150: 6px;
+  --spacing-200: 8px;
+  --spacing-300: 12px;
+  --spacing-400: 16px;
+  --spacing-600: 24px;
+  --spacing-800: 32px;
+  --spacing-1200: 48px;
+
+  /* Radii */
+  --radius-100: 4px;
+  --radius-200: 8px;
+  --radius-400: 16px;
+
+  /* Shadows */
+  --shadow-button: 0 6px 12px 0 rgb(108 92 79 / 0.2), 0 2px 4px 0 rgb(108 92 79 / 0.2);
+  --shadow-floating: 0 10px 15px 0 rgb(0 0 0 / 0.1), 0 4px 6px 0 rgb(0 0 0 / 0.1);
+  --shadow-nav-top: 0 -10px 30px 0 rgb(48 51 48 / 0.04);
+  --shadow-tab: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+/* Global typographic defaults */
+html,
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-default);
+  background: var(--color-bg-default);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Utility: all-caps label with letter-spacing baked in (Figma letterSpacing 10 on 12px = ~1.2px) */
+.label-all-caps {
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+.label-all-caps-sm {
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  font-size: 10px;
+}
+
+/* Serif tracking helper — Figma heading letterSpacing -2 translates to ~-0.02em */
+.heading-serif {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
